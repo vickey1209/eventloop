@@ -1,0 +1,19 @@
+{
+  "name": "eventloop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eventloop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickey1209/eventloop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vickey1209/eventloop/issues"
+  },
+  "homepage": "https://github.com/vickey1209/eventloop#readme"
+}
