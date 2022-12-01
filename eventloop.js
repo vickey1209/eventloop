@@ -1,5 +1,5 @@
 
-//event loop in detail
+// //event loop in detail
 
 // function first ()
 // {
@@ -7,18 +7,18 @@
   
    
     
-//     console.log("first")
+//     console.log("hello")
 //     second();
 // }
 // function second ()
 // {
-//     console.log("second")
+//     console.log("2nd")
     
     
 // }
 // function third ()
 // {
-//     console.log("third")
+//     console.log("th")
 //  console.trace()
 // }
 // first()
@@ -27,8 +27,8 @@
 
 //=====================================================================================================================
 
-//using lib function
-//add every function under lib function 
+// //using lib function
+// //add every function under lib function 
 
 // function lib ()
 // {
@@ -60,6 +60,7 @@
 // =======================================================================================================================
  
  //immediately invoked function
+
 // (function lib ()
 // {
 //     function first ()
@@ -87,7 +88,7 @@
 
 //======================================================================================================================
 
-// using timeout in event loop 
+//using timeout in event loop 
 
 
 // (function lib ()
@@ -212,97 +213,106 @@
 // USING read file in lib  
 
 
-const fs = require("fs");
+// const fs = require("fs");
 
-(function lib ()
-{
-    function first ()
-{
+// (function lib ()
+// {
+//     function first ()
+// {
 
-    process.nextTick(()=>{
-        console.log('picker')
-    })
+//     process.nextTick(()=>{
+//         console.log('picker')
+//     })
 
-
-    
-    setTimeout(()=>{
-        console.log("timer1") 
-       })
-
-       setImmediate(()=>{
-        console.log("immediate")
-     });
-    
-    console.log("third")
 
     
+//     setTimeout(()=>{
+//         console.log("timer1") 
+//        })
+
+//        setImmediate(()=>{
+//         console.log("immediate")
+//      });
     
-    console.log("first")
-    second();
-}
+//     console.log("third")
 
-    function second ()
-{
-
-    setTimeout(() => {
-        console.log("timer 5")
-       }, 11);
-
-    process.nextTick(()=>{
-        console.log('picker')
-    })
-
-    console.log("second")
     
-    setTimeout(()=>{
-        console.log("timer2")
-       })
-
-       setImmediate(()=>{
-        console.log("immediate1")
-     });
-
-}
-      
-
-    function third ()
-
-{
-
-    console.log("third");
-
-    process.nextTick(()=>{
-        console.log('picker')
-    })
-       setImmediate(()=>{
-          console.log("immediate2")
-       });
-
-       setTimeout(()=>{
-        console.log("timer3")
-       })
-
-       setTimeout(()=>{
-        console.log("timer2")
-       })
-
-       setTimeout(() => {
-        console.log("timer 4")
-       }, 100);
     
+//     console.log("first")
+//     second();
+// }
 
-       setTimeout(()=>{
-        console.log("timer6")
-       })
+//     function second ()
+// {
+
+//     const timeoutScheduled = Date.now();
+
+//     setTimeout(() => {
+//       const delay = Date.now() - timeoutScheduled;
     
-    console.log("third");
-
+//       console.log(`${delay}ms have passed since I was scheduled`);
+//     }, 10);
    
 
 
+//     setTimeout(() => {
+//         console.log("timer 5")
+//        }, 5);
 
-}
+//     process.nextTick(()=>{
+//         console.log('picker')
+//     })
 
-// first()
-fs.readFile('./doc.txt', third);
-})();
+//     console.log("second")
+    
+//     setTimeout(()=>{
+//         console.log("timer2")
+//        })
+
+//        setImmediate(()=>{
+//         console.log("immediate1")
+//      });
+
+// }
+      
+
+//     function third ()
+
+// {
+
+//     console.log("third");
+
+//     process.nextTick(()=>{
+//         console.log('picker')
+//     })
+//        setImmediate(()=>{
+//           console.log("immediate2")
+//        });
+
+//        setTimeout(()=>{
+//         console.log("timer3")
+//        })
+
+//        setTimeout(()=>{
+//         console.log("timer2")
+//        })
+
+//        setTimeout(() => {
+//         console.log("timer 4")
+//        }, 100);
+    
+
+//        setTimeout(()=>{
+//         console.log("timer6")
+//        })
+    
+//     console.log("third");
+
+// }
+
+// // first()
+// fs.readFile('./doc.txt', second);
+// })();
+
+
+
